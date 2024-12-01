@@ -1,0 +1,10 @@
+.navbar {
+    background-color: $primary; // Fondo personalizado
+    .nav-link {
+      color: #fff; // Enlaces blancos
+      &:hover {
+        color: lighten($secondary, 20%); // Enlaces en hover
+      }
+    }
+  }
+  

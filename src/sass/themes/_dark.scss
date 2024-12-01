@@ -1,0 +1,17 @@
+body {
+    background-color: #121212; // Fondo oscuro
+    color: #e0e0e0; // Texto claro
+  }
+  
+  .navbar {
+    background-color: #1f1f1f; // Navbar oscuro
+  }
+  
+  .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    &:hover {
+      background-color: lighten(#3498db, 10%);
+    }
+  }
+  

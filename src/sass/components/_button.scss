@@ -1,0 +1,12 @@
+// Estilos de botones
+.btn {
+    border-radius: 50px; // Bordes redondeados
+    padding: 0.75rem 1.5rem; // Padding adicional
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: darken($primary, 10%); // Color más oscuro en hover
+      transform: scale(1.05); // Animación de escala
+    }
+  }
+  
