@@ -8,6 +8,20 @@
     <head>
       <link rel="stylesheet" href="./src/style/homeStyle.css">
     </head>
+    <style>
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  max-height: 500px; /* Ajusta la altura máxima del carrusel */
+  object-fit: cover; /* Asegura que la imagen se adapte correctamente */
+}
+
+    </style>
     
   </head>
   <body>
@@ -37,12 +51,44 @@
     <!-- Contenido principal -->
     <main>
       <!-- Sección de Bienvenida -->
-      <section class="container card">
-        <h2>Bienvenida</h2>
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">SECCION DE BIENVENIDA</p>
+      <section  class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/img/home-welcome.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Siempre cerca de ti</h5>
+              <p>Cuando más nos necesitas</p>
+              <a href="#" class="btn btn-warning">Participa del sorteo</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/slide2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Con los mejores especialistas</h5>
+              <p>Tu salud es nuestra prioridad</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/slide3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Clínica San Pablo</h5>
+              <p>Una red de confianza y calidad</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </section>
 
       <!-- Sección de Especialidades -->
