@@ -19,11 +19,14 @@
 
   .navbar-brand {
     display: flex; 
-    align-items: center
+    align-items: center;
+    
   }
   
   .navbar-brand img {
     margin-right: 10px;
+    max-width: 320px;
+    height: 76px;
   }
 
   /* Estilo para los enlaces del navbar */
@@ -34,6 +37,9 @@
     color: #6c757d;
     text-decoration: none;
     transition: color 0.3s ease;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 17px 20px;
   }
 
   /* Efecto hover para los enlaces */
@@ -70,6 +76,10 @@
     outline: none;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
   }
+  .navbar .btn.ml-auto {
+    margin-left: auto;
+    margin-right: 0;
+  }
 
   /* Media query para pantallas pequeñas */
   @media (max-width: 915px) {
@@ -77,4 +87,46 @@
       font-size: 1rem;
       padding: 0.5em 1.2em;
     }
+  }
+ 
+  .card-body {
+    text-align: center; /* Centra el texto dentro de la card-body */
+  }
+  
+  .btncard {
+    display: flex;
+    justify-content: center; /* Asegura que el icono dentro del botón esté centrado */
+    align-items: center; /* Centra el icono verticalmente dentro del botón */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+  }
+  
+  .card-img-top {
+    border-radius: 10px;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+  }
+
+  .carousel-indicators button {
+    background-color: #00BFFF; /* Celeste */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #179fcd; /* Celeste oscuro cuando está activo */
+  }
+
+  .btncarousel {
+    font-size: small;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    background-color: #179fcd;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btncarousel:hover {
+    background-color: white; /* Celeste oscuro en hover */
+    color: black; /* Texto blanco al pasar el mouse */
   }
