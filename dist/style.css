@@ -11947,6 +11947,16 @@ textarea.form-control-lg {
   background-color: white;
   color: black;
 }
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
 
 .card-body {
   text-align: center;
@@ -11996,4 +12006,74 @@ textarea.form-control-lg {
   color: black; 
 }
 
+/*EQUIPO*/ 
+.custom-container {
+  position: relative;
+}
+
+/* Imagen con bordes redondeados */
+.custom-image {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+
+/* Tarjeta superpuesta */
+.custom-card {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Texto estilizado */
+.custom-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+/* Emoji grande */
+.emoji-large {
+  font-size: 2.5rem;
+}
+
+/* Tarjetas del equipo médico */
+.team-card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card .card-body {
+  padding: 15px;
+}
+
+.team-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Estilos para los títulos de los médicos */
+.team-card .card-body span {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.team-card .card-body p {
+  font-size: 1rem;
+  color: #555;
+}
 /*# sourceMappingURL=style.css.map */

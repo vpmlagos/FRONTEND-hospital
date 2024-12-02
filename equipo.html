@@ -5,47 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clínica Hoffen</title>
-  <!--link rel="stylesheet" href="dist/style.css"-->
   <link rel="stylesheet" href="../dist/style.css">
-  <style>
-    /* Contenedor principal */
-    .custom-container {
-      position: relative;
-    }
-
-    /* Imagen con bordes redondeados */
-    .custom-image {
-      border-radius: 15px;
-      width: 100%;
-      height: auto;
-    }
-
-    /* Tarjeta superpuesta */
-    .custom-card {
-      position: absolute;
-      top: 50%;
-      right: 10%;
-      transform: translateY(-50%);
-      background-color: #f9f9f9;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
-      text-align: center;
-    }
-
-    /* Texto estilizado */
-    .custom-text {
-      font-size: 1.25rem;
-      font-weight: 500;
-      color: #4a4a4a;
-    }
-
-    /* Emoji grande */
-    .emoji-large {
-      font-size: 2.5rem;
-    }
-  </style>
 </head>
 
 <body>
@@ -56,7 +16,8 @@
         <a class="navbar-brand" href="index.html">
           <img src="src/img/logohoffen.png" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -65,87 +26,76 @@
             <li class="nav-item"><a class="nav-link" aria-current="page" href="equipo.html">Equipo Médico</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="contacto.html">Contacto</a></li>
           </ul>
-            <button class="btn ml-auto" type="submit">Reservar Cita</button>
-          </div>
+          <button class="btn ml-auto" type="submit">Reservar Cita</button>
+        </div>
       </div>
     </nav>
   </header>
-
-  <!-- Contenido principal -->
   <main>
-    <!--INICIO SECCION DE PRESENTACION-->
+    <!-- INICIO SECCION DE PRESENTACION-->
     <section class="banner-card position-relative text-center shadow-lg rounded">
       <img src="src/img/excelencia.jpg" alt="Imagen de la clínica" class="img-fluid rounded">
       <div class="banner-content position-absolute top-50 start-50 translate-middle p-3">
         <h2 class="text-white fw-bold">Bienvenido a Clínica Hoffen</h2>
-        <p class="text-white">Tu salud es nuestra prioridad. Contamos con especialistas dedicados para cuidar de ti y de
-          los tuyos.</p>
+        <p class="text-white">Tu salud es nuestra prioridad. Contamos con especialistas dedicados para cuidar de ti y de los tuyos.</p>
         <a href="contacto.html" class="btn btn-primary">Agenda tu cita</a>
       </div>
     </section>
-
-    <!--FIN SECCION DE PRESENTACION-->
-    <!--INICIO SECCION DE LISTA DE EQUIPO MEDICO-->
+  
+    <!-- INICIO SECCION DE LISTA DE EQUIPO MEDICO -->
     <section class="container my-5">
       <div class="row g-4">
         <!-- IMG 1 y Tarjeta -->
-        <div class="col-md-3 text-center">
-          <img src="src/img/especialidad1.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="width: 80%; height: 50%;">
-          <div class="card border-0 shadow" style="background-color: #f9f9f9;">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+          <div class="team-card shadow" style="height: 450px;">
+            <img src="src/img/especialidad1.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="object-fit: cover; height: 200px;">
             <div class="card-body text-center">
-              <p class="fs-5">
-                <span style="font-size: 2rem;">Doctora Fernandez</span><br>
-                <p>Especialista en Oncología<br>Con más de 5 años de experiencia en tratamientos de radioterapia</p>
-              </p>
+              <span>Doctora Fernandez</span>
+              <p>Especialista en Oncología<br>Con más de 5 años de experiencia en tratamientos de radioterapia</p>
             </div>
           </div>
         </div>
-    
+  
         <!-- IMG 2 y Tarjeta -->
-        <div class="col-md-3 text-center">
-          <img src="src/img/especialidad2.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="width: 80%; height: 50%;">
-          <div class="card border-0 shadow" style="background-color: #f9f9f9;">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+          <div class="team-card shadow" style="height: 450px;">
+            <img src="src/img/especialidad2.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="object-fit: cover; height: 200px;">
             <div class="card-body text-center">
-              <p class="fs-5">
-                <span style="font-size: 2rem;">Doctor Martinez</span><br>
-                <p>Especialista en Cirugía<br>Posee más de 10 años de experiencia</p>
-              </p>
+              <span>Doctor Martinez</span>
+              <p>Especialista en Cirugía<br>Posee más de 10 años de experiencia</p>
             </div>
           </div>
         </div>
-    
+  
         <!-- IMG 3 y Tarjeta -->
-        <div class="col-md-3 text-center">
-          <img src="src/img/especialidad3.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="width: 80%; height: 50%;">
-          <div class="card border-0 shadow" style="background-color: #f9f9f9;">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+          <div class="team-card shadow"style="height: 450px">
+            <img src="src/img/especialidad3.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="object-fit: cover; height: 200px;">
             <div class="card-body text-center">
-              <p class="fs-5">
-                <span style="font-size: 2rem;">Doctora Vergara</span><br>
-                <p>Especialista en Geriatría<br>Maestría en Geriatría</p>
-              </p>
+              <span>Doctora Vergara</span>
+              <p>Especialista en Geriatría<br>Maestría en Geriatría</p>
             </div>
           </div>
         </div>
-
+  
         <!-- IMG 4 y Tarjeta -->
-        <div class="col-md-3 text-center">
-          <img src="src/img/especialidad4.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="width: 80%; height: 50%;">
-          <div class="card border-0 shadow" style="background-color: #f9f9f9;">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+          <div class="team-card shadow" style="height: 450px">
+            <img src="src/img/especialidad4.jpg" alt="Doctora con paciente" class="img-fluid rounded mb-3" style="object-fit: cover; height: 200px;">
             <div class="card-body text-center">
-              <p class="fs-5">
-                <span style="font-size: 2rem;">Doctor Rodriguez</span><br>
-                <p>Especialista en Cardiología<br>Con más de 20 años de experiencia</p>
-              </p>
+              <span>Doctor Rodriguez</span>
+              <p>Especialista en Cardiología<br>Con más de 20 años de experiencia</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    <!--FIN SECCION DE LISTA DE EQUIPO MEDICO-->
+    <!-- FIN SECCION DE LISTA DE EQUIPO MEDICO -->
   </main>
-  <!--INICIO FOOTER-->
+  
+ 
+
+  <!-- INICIO FOOTER -->
   <footer class="container py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
@@ -154,7 +104,8 @@
     </ul>
     <p class="text-center text-muted">© 2024 Hospital Hoffen, Inc</p>
   </footer>
-  <!--FIN FOOTER-->
+  <!-- FIN FOOTER -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
