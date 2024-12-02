@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as vars;
+
+
+@mixin transition($properties...) {
+    transition: $properties vars.$transition; // Usamos la variable $transition con el alias "vars"
+  }
+  
+  @mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,14 +1,12 @@
-// Reset de márgenes y paddings
+@use '../abstracts/variables' as vars;
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  // Estilos globales básicos
-  body {
-    font-family: $font-family-sans-serif;
-    background-color: #f8f9fa; // Fondo global
-    color: #212529; // Texto global
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: vars.$font-primary;
+  color: vars.$color-black;
+}

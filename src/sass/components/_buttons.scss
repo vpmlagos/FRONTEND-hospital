@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.75em 1.5em;
+  border-radius: vars.$btn-border-radius;
+  font-family: vars.$font-secondary;
+  @include mixins.transition(background-color, transform);
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: vars.$color-primary;
+  color: vars.$color-white;
+
+  &:hover {
+    background-color: vars.$color-white;
+    color: vars.$color-black;
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+}
+
+.btncarousel {
+  font-size: small;
+  padding: 0.5em 1em;
+  @extend .btn;
+}
