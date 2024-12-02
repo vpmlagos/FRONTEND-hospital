@@ -11844,5 +11844,173 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: white;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  max-width: 320px;
+  height: 76px;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 17px 20px;
+}
+
+.navbar .nav-link:hover {
+  color: #179fcd;
+}
+
+.navbar .btn {
+  font-size: 1.2rem;
+  padding: 0.75em 1.5em;
+  border-radius: 30px;
+  font-family: "Arial", Helvetica, sans-serif;
+  transition: background-color 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #179fcd;
+  color: white;
+}
+
+.navbar .btn:hover {
+  background-color: #fafafa;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.nav-item:hover {
+  color: #179fcd;
+}
+
+.navbar .btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.navbar .btn.ml-auto {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (max-width: 915px) {
+  .navbar .btn {
+    font-size: 1rem;
+    padding: 0.5em 1.2em;
+  }
+}
+.brand-tittle {
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #179fcd;
+  text-decoration: none;
+}
+
+.brand-slogan {
+  font-size: small;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #179fcd;
+  text-decoration: none;
+}
+
+.btncarousel {
+  font-size: medium;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  font-family: "Arial", Helvetica, sans-serif;
+  transition: background-color 0.3s ease;
+  border: none;
+  background-color: #179fcd;
+  color: white;
+  text-decoration: none;
+}
+
+.btncarousel:hover {
+  background-color: white;
+  color: black;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.btncard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-indicators button {
+  background-color: #00BFFF;
+}
+
+.carousel-indicators .active {
+  background-color: #179fcd;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-indicators button {
+  background-color: #00BFFF; /* Celeste */
+}
+
+.carousel-indicators .active {
+  background-color: #179fcd; /* Celeste oscuro cuando está activo */
+}
+
+.btncarousel {
+  font-size: medium;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  background-color: #179fcd;
+  color: white;
+  text-decoration: none;
+}
+
+.btncarousel:hover {
+  background-color: white; /* Celeste oscuro en hover */
+  color: black; /* Texto blanco al pasar el mouse */
+}
 
 /*# sourceMappingURL=style.css.map */

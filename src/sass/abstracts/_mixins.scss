@@ -1,9 +1,9 @@
 @use '../abstracts/variables' as vars;
 
 
-@mixin transition($properties...) {
-    transition: $properties vars.$transition; // Usamos la variable $transition con el alias "vars"
-  }
+@mixin transition($property) {
+  transition: $property vars.$transition;
+}
   
   @mixin center-flex {
     display: flex;

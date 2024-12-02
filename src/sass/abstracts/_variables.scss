@@ -1,10 +1,16 @@
-$font-primary: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-$font-secondary: Arial, Helvetica, sans-serif;
-$color-primary: #179fcd;
-$color-secondary: #6c757d;
-$color-white: #ffffff;
-$color-black: #000000;
+// Variables para colores
+$primary-color: #179fcd;
+$secondary-color: #6c757d;
+$light-color: #fafafa;
+$dark-color: #00BFFF;
 
-$btn-border-radius: 30px;
+// Fuentes
+$font-primary: 'Arial', Helvetica, sans-serif;
+$font-secondary: 'Cambria', 'Cochin', Georgia, 'Times New Roman', serif;
+
+// Otros
+$transition-speed: 0.3s;
+$font-size-large: large;
+$font-size-small: small;
+
 $transition: 0.3s ease;
-
